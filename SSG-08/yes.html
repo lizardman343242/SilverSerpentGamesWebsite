@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head class="title">
+        <meta charset="UTF-8" />
+        <link rel="javascript" href="java.js" />
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <div id="wrapper">
+            <a href="LandingPage.html"
+                ><img
+                    src="zSilverSnakeLogo.png"
+                    alt="1"
+                    width="100"
+                    height="125"
+            /></a>
+            <h1>Silver Serpent Games</h1>
+        </div>
+        <hr />
+        <hr />
+    </head>
+  
+    <body>
+        <div id="yesBox">
+            <div class="yes">
+                <p>YES</p>
+            </div>
+        </div>
+        <div id="yesBox">
+            <div class="yes">
+                <p>YES</p>
+            </div>
+        </div>
+        <div id="yesBox">
+            <div class="yes">
+                <p>YES</p>
+            </div>
+        </div>
+        <div id="yesBox">
+            <div class="yes">
+                <p>YES</p>
+            </div>
+        </div>
+        <div id="yesBox">
+            <div class="yes">
+                <p>YES</p>
+            </div>
+        </div>
+        <script>
+            const yesBoxes = document.querySelectorAll(".yes");
+
+            yesBoxes.forEach((yesBox) => {
+                yesBox.addEventListener("mouseover", () => {
+                    yesBox.style.backgroundColor = "rgb(176, 9, 9)";
+                    yesBox.style.transition = "background-color 0.5s";
+                });
+                yesBox.addEventListener("mouseout", () => {
+                    yesBox.style.backgroundColor = "rgb(255, 255, 255)";
+                    yesBox.style.transition = "background-color 0.5s";
+                });
+            });
+        </script>
+    </body>
+</html>
+
